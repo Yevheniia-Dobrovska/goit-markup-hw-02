@@ -114,7 +114,7 @@ a {
     color: var(--page);
     font-weight: 500;
     letter-spacing: 0.04em;
-    line-height: 1.5ж
+    line-height: 1.5;
 }
 
 .order-button:hover {
@@ -131,6 +131,7 @@ a {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--text);
+    text-transform: capitalize;
 }
 
 .advantages-paragraf {
