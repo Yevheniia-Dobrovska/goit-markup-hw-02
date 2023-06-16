@@ -57,7 +57,7 @@ a {
     list-style-type: none;
 }
 
-.menu-list-item:focus {
+.menu-link:focus {
     color: var(--button-filter-hover);
 }
 
@@ -126,8 +126,8 @@ a {
     background-color: var(--button-filter-hover);
 }
 
-.order-button:active {
-    background-color: var(--brand-background);
+.order-button:focus {
+    background-color: var(--button-filter-hover);
 }
 
 .h3-advantages {
