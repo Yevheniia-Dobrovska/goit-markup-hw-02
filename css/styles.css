@@ -30,7 +30,6 @@ body {
 
 a {
     font-style: normal;
-    color: var(--text);
 }
 
 .logo-accent {
@@ -141,7 +140,6 @@ a {
 
 .advantages-paragraf {
     letter-spacing: 0.02em;
-    color: var(--text);
 }
 
 .title-we-doing, .title-team {
