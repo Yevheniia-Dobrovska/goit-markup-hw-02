@@ -183,6 +183,7 @@ a {
     border: 1px solid var(--border);
     color: var(--brand);
     cursor: pointer;
+    line-height: 1.5;
 }
 
 .button-filter:hover {
