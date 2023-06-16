@@ -1,34 +1,40 @@
+:root {
+    --brand: #4D5AE5;
+    --brand-background: #2E2F42;
+    --page: #FFFFFF;
+    --text: #434455;
+    --logo-down: #F4F4FD;
+    --border: #E7E9FC;
+    --button-filter-hover: #404BBF;   
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
-    color: var(--text-color);
+    color: var(--text);
+    background-color: var(--page);
     letter-spacing: 0.02em;
     text-decoration: none;
 }
 
-a {
+.link {
     text-decoration: none;
-    font-style: normal;
-    color: var(--text-color);
 }
 
-:root {
-    --brand-color: #4D5AE5;
-    --brand-background-color: #2E2F42;
-    --page-color: #FFFFFF;
-    --text-color: #434455;
-    --logo-down-color: #F4F4FD;
-    --border-color: #E7E9FC;
-    --button-filter-hover: #404BBF;
-   
-    
+.list {
+    list-style: none;
+}
+
+a {
+    font-style: normal;
+    color: var(--text);
 }
 
 .logo-accent {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
@@ -36,46 +42,80 @@ a {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     align-items: center;
-    color: var(--brand-color);
+    color: var(--brand);
 }
 
 .logo-up {
-    color: var(--brand-background-color);
+    color: var(--brand-background);
+    font-family: 'Raleway', sans-serif;
 }
 
 .logo-down {
-    color: var(--logo-down-color);
+    color: var(--logo-down);
 }
 
-ul {
+.menu-list {
     list-style-type: none;
 }
 
-.menu.li > a {
+.menu-link {
     font-weight: 500;
-    color: var(--brand-background-color);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--brand-background);
 }
 
-.address.li > a {
-    color: var(--text-color);
+.menu-link:hover, .menu-link:active {
+    color: var(--button-filter-hover);
 }
 
-h1 {
+.menu-list > a {
+    font-weight: 500;
+    color: var(--brand-background);
+}
+
+.address-list {
+    font-style: normal;
+}
+
+.address.list > a {
+    color: var(--text);
+}
+
+.address-link {
+    letter-spacing: 0.02em;
+    color: var(--text);
+}
+
+.address-link:hover {
+    color: var(--button-filter-hover);
+}
+
+.address-link:focus {
+    color: var(--button-filter-hover);
+}
+
+.hero {
+    background-color: var(--brand-background);
+}
+
+.h1-hero {
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
-    color: var(--page-color);
-    background-color: var(--brand-background-color);
+    color: var(--page);
 }
 
 .order-button {
     font-family: inherit;
-    background-color: var(--brand-color);
-    color: var(--page-color);
+    background-color: var(--brand);
+    color: var(--page);
     font-weight: 500;
     letter-spacing: 0.04em;
+    line-height: 1.5ж
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 }
@@ -85,42 +125,48 @@ h1 {
 }
 
 .order-button:active {
-    background-color: var(--brand-background-color);
-} 
+    background-color: var(--brand-background);
+}
 
-h3 {
+.h3-advantages {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: var(--brand-background-color);
+    color: var(--text);
 }
 
-.h2-weDoing, .h2-team {
+.advantages-paragraf {
+    letter-spacing: 0.02em;
+    color: var(--brand-background);
+}
+
+.h2-we-doing, .h2-team {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em;
-    color: var(--brand-background-color);
+    text-transform: capitalize;
+    color: var(--brand-background);
 }
 
 .team {
-    background-color: var(--logo-down-color);
+    background-color: var(--logo-down);
 }
 
 .item-team {
-    background: var(--page-color);
+    background: var(--page);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
 }
 
 .footer {
-    background-color: var(--brand-background-color);
+    background-color: var(--brand-background);
 }
 
 .footer > p {
-    color:var(--logo-down-color);
+    color:var(--logo-down);
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -132,25 +178,25 @@ h3 {
 .button-filter {
     font-weight: 500;
     letter-spacing: 0.04em;
-    background-color: var(--logo-down-color);
-    border: 1px solid var(--border-color);
+    background-color: var(--logo-down);
+    border: 1px solid var(--border);
     border-radius: 4px;
-    color: var(--brand-color);
+    color: var(--brand);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
 }
 
 .button-filter:hover {
     background-color: var(--button-filter-hover);
-    color: var(--page-color);
+    color: var(--page);
 }
 .button-filter:active {
-    background-color: var(--brand-background-color);
+    background-color: var(--brand-background);
 }
 
 .h2-image {
     font-weight: 500;
-    color: var(--brand-background-color);
+    color: var(--brand-background);
     line-height: 1.2;
     letter-spacing: 0.02em;
 }
@@ -162,9 +208,9 @@ h3 {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.02em;
-    color: var(--text-color);
+    color: var(--text);
 }
 
 .image-item {
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--border);
 }
