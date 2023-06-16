@@ -161,11 +161,11 @@ a {
     border-radius: 0px 0px 4px 4px;
 }
 
-.footer {
+.footer-section {
     background-color: var(--brand-background);
 }
 
-.footer > p {
+.footer-paragraf {
     color:var(--logo-down);
     font-family: 'Roboto';
     font-style: normal;
@@ -184,31 +184,21 @@ a {
     color: var(--brand);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
+    cursor: pointer;
 }
 
 .button-filter:hover {
     background-color: var(--button-filter-hover);
     color: var(--page);
 }
+
+.button-filter:focus {
+    background-color: var(--button-filter-hover);
+    color: var(--page);
+}
+
 .button-filter:active {
     background-color: var(--brand-background);
-}
-
-.h2-image {
-    font-weight: 500;
-    color: var(--brand-background);
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-}
-
-.h2-image > p {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.02em;
-    color: var(--text);
 }
 
 .image-item {
